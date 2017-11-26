@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.insertController">
+	<items>
+		<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+			<children>
+				<TextField fx:id="text1" layoutX="68.0" layoutY="81.0" />
+				<TextField fx:id="text2" layoutX="67.0" layoutY="104.0" />
+				<TextField fx:id="text3" layoutX="68.0" layoutY="127.0" />
+				<TextField fx:id="text4" layoutX="68.0" layoutY="150.0" />
+				<TextField fx:id="text5" layoutX="68.0" layoutY="173.0" />
+				<Label layoutX="97.0" layoutY="32.0" text="插入学生信息" />
+				<Label layoutX="29.0" layoutY="85.0" text="学号" />
+				<Label layoutX="29.0" layoutY="108.0" text="姓名" />
+				<Label layoutX="29.0" layoutY="131.0" text="性别" />
+				<Label layoutX="29.0" layoutY="154.0" text="生日" />
+				<Label layoutX="29.0" layoutY="177.0" text="班级" />
+				<Button fx:id="infoButton" layoutX="97.0" layoutY="234.0" mnemonicParsing="false" onAction="#insertInfo" text="确认" />
+				<Button fx:id="returnButton1" layoutX="149.0" layoutY="234.0" mnemonicParsing="false" onAction="#selectPage" text="返回" />
+			</children>
+		</AnchorPane>
+		<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+			<children>
+				<TextField fx:id="text6" layoutX="68.0" layoutY="80.0" />
+				<TextField fx:id="text7" layoutX="68.0" layoutY="103.0" />
+				<TextField fx:id="text8" layoutX="68.0" layoutY="126.0" />
+				<Label layoutX="112.0" layoutY="34.0" text="插入学生成绩" />
+				<Label layoutX="30.0" layoutY="84.0" text="学号" />
+				<Label layoutX="30.0" layoutY="107.0" text="课程" />
+				<Label layoutX="30.0" layoutY="130.0" text="成绩" />
+				<Button fx:id="TransButton" layoutX="100.0" layoutY="233.0" mnemonicParsing="false" onAction="#insertTrans" text="确认" />
+				<Button fx:id="returnButton2" layoutX="149.0" layoutY="233.0" mnemonicParsing="false" onAction="#selectPage" text="返回" />
+			</children>
+		</AnchorPane>
+	</items>
+</SplitPane>

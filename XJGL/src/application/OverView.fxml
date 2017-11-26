@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="477.0" prefWidth="308.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.OverViewController">
+	<children>
+		<Button fx:id="but1" layoutX="50.0" layoutY="84.0" mnemonicParsing="false" onAction="#searchByNum" text="查询学号" textFill="#e80505" />
+		<Button fx:id="but2" layoutX="126.0" layoutY="84.0" mnemonicParsing="false" onAction="#searchByName" text="查询姓名" textFill="#b51d1d" />
+		<Button fx:id="but3" layoutX="202.0" layoutY="84.0" mnemonicParsing="false" onAction="#searchByProfession" text="查询专业" textFill="#c36320" />
+		<TextArea fx:id="textarea" layoutX="54.0" layoutY="290.0" prefHeight="107.0" prefWidth="228.0" />
+		<Label layoutX="14.0" layoutY="48.0" style="-fx-font-style: 20;" text="输入" />
+		<TextField fx:id="textfield" layoutX="44.0" layoutY="44.0" prefHeight="23.0" prefWidth="228.0" />
+		<Label layoutX="14.0" layoutY="298.0" text="输出" />
+      <Button fx:id="returnButton" layoutX="262.0" layoutY="452.0" mnemonicParsing="false" onAction="#selectPage" text="返回" />
+      <Button fx:id="but6" layoutX="126.0" layoutY="113.0" mnemonicParsing="false" onAction="#searchTeacher" text="查询老师" textFill="#bc1010" />
+      <Button fx:id="but4" layoutX="50.0" layoutY="113.0" mnemonicParsing="false" onAction="#searchTotalTrans" text="加权成绩" textFill="#e12d2d" />
+      <Button fx:id="but5" layoutX="50.0" layoutY="143.0" mnemonicParsing="false" onAction="#searchPartTrans" text="必修成绩" textFill="#ab3232" />
+      <Button fx:id="but7" layoutX="50.0" layoutY="178.0" mnemonicParsing="false" onAction="#searchCourse" text="查询课程" textFill="#d01e1e" />
+      <Button fx:id="but8" layoutX="202.0" layoutY="178.0" mnemonicParsing="false" onAction="#searchDanger" text="挂科学生" textFill="#d71c1c" />
+	</children>
+	<effect>
+		<Reflection />
+	</effect>
+</AnchorPane>

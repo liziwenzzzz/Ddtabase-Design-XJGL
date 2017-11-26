@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="411.0" prefWidth="339.0" style="-fx-border-color: red;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.selectController">
+	<children>
+		<Button fx:id="searchButton" layoutX="119.0" layoutY="197.0" mnemonicParsing="false" onAction="#SearchPage" prefHeight="23.0" prefWidth="102.0" style="-fx-font-size: 20;" text="search" textFill="#392f2f" />
+		<Button fx:id="insertButton" layoutX="119.0" layoutY="282.0" mnemonicParsing="false" onAction="#InsertPage" prefHeight="23.0" prefWidth="102.0" style="-fx-font-size: 20;" text="insert" />
+		<Label layoutX="107.0" layoutY="83.0" prefHeight="60.0" prefWidth="126.0" style="-fx-font-size: 30;" text="学籍管理" />
+	</children>
+</AnchorPane>
